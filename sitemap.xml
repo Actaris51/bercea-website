@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://bercea.app/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/fr/fonctionnalites.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/fonctionnalites.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/features.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/fr/science.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/science.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/science.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/fr/ebooks.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/ebooks.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/ebooks.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/fr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/contact.html"/>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/en/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/en/features.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/en/science.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/en/ebooks.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/en/contact.html</loc>
+    <priority>0.5</priority>
+  </url>
+</urlset>

@@ -468,14 +468,33 @@ section { padding: clamp(3rem, 6vw, 5rem) 0; }
   flex-wrap: wrap;
 }
 .store-chip {
-  font-size: 0.8rem;
-  padding: .4rem .8rem;
-  background: var(--bg-3);
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: .55rem 1rem;
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.15), rgba(96, 165, 250, 0.1));
   border-radius: 999px;
-  color: var(--text-dim);
-  border: 1px solid var(--border);
+  color: #fff;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  text-decoration: none;
+  transition: all .2s ease;
 }
-.store-chip.placeholder { opacity: 0.6; }
+a.store-chip:hover {
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.3), rgba(96, 165, 250, 0.2));
+  border-color: rgba(167, 139, 250, 0.6);
+  transform: translateY(-1px);
+  color: #fff;
+}
+.store-chip.placeholder {
+  opacity: 0.55;
+  background: var(--bg-3);
+  color: var(--text-dim);
+  border-color: var(--border);
+  font-weight: 500;
+  cursor: default;
+}
 
 /* ========= Contact / form ========= */
 .contact-grid {

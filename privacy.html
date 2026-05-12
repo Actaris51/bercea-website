@@ -2,151 +2,380 @@
 <html lang="fr">
 <head>
 <meta name="google-site-verification" content="pw3cvCqwkJUWkLKOZLaTlWeFZFNxrzgMjf4DwJ_SHzI">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politique de confidentialité — Bercea</title>
-  <meta name="description" content="Politique de confidentialité de Bercea. Aucune donnée personnelle collectée. Tout reste sur votre téléphone.">
-  <link rel="canonical" href="https://bercea.app/privacy">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #f8f9fa;
-      color: #333;
-      line-height: 1.7;
-    }
-    header {
-      background: #1a1f3a;
-      color: white;
-      padding: 40px 24px 32px;
-      text-align: center;
-    }
-    header h1 { font-size: 28px; margin-bottom: 8px; }
-    header p { color: rgba(255,255,255,0.7); font-size: 14px; }
-    main {
-      max-width: 720px;
-      margin: 40px auto;
-      padding: 0 24px 60px;
-    }
-    section { margin-bottom: 36px; }
-    h2 {
-      font-size: 18px;
-      color: #1a1f3a;
-      margin-bottom: 12px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #eee;
-    }
-    p { margin-bottom: 12px; font-size: 15px; }
-    .highlight {
-      background: #f0edff;
-      border-left: 4px solid #7c5cbf;
-      border-radius: 4px;
-      padding: 16px 20px;
-      margin-bottom: 20px;
-    }
-    .highlight strong { color: #4a2f8f; }
-    footer {
-      text-align: center;
-      color: #999;
-      font-size: 13px;
-      padding: 24px;
-      border-top: 1px solid #eee;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — Bercea</title>
+<meta name="description" content="Politique de confidentialité de Bercea. Données locales par défaut. Synchronisation co-parentale optionnelle via Firebase (Google, Europe), chiffrée et anonyme.">
+<meta name="theme-color" content="#0f1329">
+<link rel="icon" href="assets/icons/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="canonical" href="https://bercea.app/privacy">
+<meta property="og:title" content="Politique de confidentialité — Bercea">
+<meta property="og:description" content="Données locales par défaut. Synchronisation co-parentale optionnelle via Firebase, chiffrée et anonyme.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bercea.app/privacy">
+<meta property="og:image" content="https://bercea.app/assets/store/feature_graphic.png">
+<meta property="og:site_name" content="Bercea">
+<style>
+  /* Privacy page specifics — reuse site tokens where possible */
+  .privacy-page {
+    padding: 4rem 0 5rem;
+    color: var(--text, #ecedf7);
+  }
+  .privacy-page .container { max-width: 760px; }
+  .privacy-page h1 {
+    font-size: 2.25rem;
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+  }
+  .privacy-page .meta {
+    color: rgba(236, 237, 247, 0.55);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  .privacy-page section { margin-bottom: 2.5rem; }
+  .privacy-page h2 {
+    font-size: 1.35rem;
+    margin: 2rem 0 0.75rem;
+    color: #ecedf7;
+  }
+  .privacy-page h3 {
+    font-size: 1.05rem;
+    margin: 1.25rem 0 0.5rem;
+    color: #a78bfa;
+    font-weight: 600;
+  }
+  .privacy-page p,
+  .privacy-page li {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: rgba(236, 237, 247, 0.85);
+    margin-bottom: 0.75rem;
+  }
+  .privacy-page ul {
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .privacy-page a { color: #a78bfa; }
+  .privacy-page code {
+    background: rgba(167, 139, 250, 0.15);
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: ui-monospace, Menlo, monospace;
+  }
+  .privacy-page .summary {
+    background: rgba(167, 139, 250, 0.1);
+    border-left: 3px solid #a78bfa;
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    margin-bottom: 2.5rem;
+  }
+  .privacy-page .summary strong { color: #c5b6ff; }
+  .privacy-page hr {
+    border: 0;
+    border-top: 1px solid rgba(236, 237, 247, 0.12);
+    margin: 4rem 0;
+  }
+  .lang-anchor-bar {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .lang-anchor-bar a {
+    color: rgba(236, 237, 247, 0.6);
+    text-decoration: none;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid rgba(236, 237, 247, 0.15);
+  }
+  .lang-anchor-bar a:hover { color: #a78bfa; border-color: #a78bfa; }
+</style>
 </head>
 <body>
+<div class="stars" aria-hidden="true"></div>
 
-<header>
-  <h1>🌙 Bercea</h1>
-  <p>Politique de confidentialité</p>
+<header class="site-header">
+  <div class="container">
+    <a href="/fr/" class="logo">
+      <img src="assets/icons/logo.svg" alt="Bercea">
+      <span>Bercea</span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="/fr/">Accueil</a>
+      <a href="/fr/fonctionnalites">Fonctionnalités</a>
+      <a href="/fr/science">Science</a>
+      <a href="/fr/ebooks">E-books</a>
+      <a href="/fr/contact">Contact</a>
+      <div class="lang-switch">
+        <a href="/fr/">FR</a>
+        <a href="/en/">EN</a>
+      </div>
+    </nav>
+  </div>
 </header>
 
-<main>
+<main class="privacy-page">
+  <div class="container">
 
-  <div class="highlight">
-    <strong>En résumé :</strong> Bercea ne collecte aucune donnée personnelle.
-    Toutes vos informations restent uniquement sur votre appareil.
-    Nous n'avons aucun serveur, aucune base de données, aucun accès à vos données.
+    <div class="lang-anchor-bar">
+      <a href="#fr">Français</a>
+      <a href="#en">English</a>
+    </div>
+
+    <h1 id="fr">Politique de confidentialité</h1>
+    <p class="meta">Dernière mise à jour : 11 mai 2026 — Bercea v1.0.5</p>
+
+    <div class="summary">
+      <strong>En résumé :</strong> Bercea fonctionne par défaut sans collecte de données — toutes vos informations restent sur votre appareil. Vous pouvez <em>optionnellement</em> activer une synchronisation entre deux téléphones via un code à 6 chiffres ; dans ce cas seulement, les données du bébé sont stockées de manière chiffrée dans Firebase Realtime Database de Google, en Europe.
+    </div>
+
+    <section>
+      <h2>1. Qui sommes-nous ?</h2>
+      <p>
+        Bercea est une application mobile de suivi du sommeil de bébé, éditée par Julien Duval (entreprise individuelle, France). L'application est disponible sur iOS (App Store) et Android (Google Play).
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Données stockées localement</h2>
+      <p>
+        Par défaut, toutes les informations que vous saisissez (prénom et date de naissance du bébé, enregistrements de sommeil, repas, couches, notes, routine du coucher, données de bien-être parental) sont stockées <strong>exclusivement sur votre appareil</strong> via le stockage local (AsyncStorage).
+      </p>
+      <p>
+        Elles ne quittent jamais votre téléphone, sauf si vous activez explicitement la fonctionnalité de partage co-parental (voir section 3).
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Partage co-parental optionnel (Firebase)</h2>
+      <p>
+        Bercea propose une fonctionnalité optionnelle permettant à deux parents de partager le suivi du même bébé en temps réel sur deux appareils. Cette fonctionnalité utilise <strong>Google Firebase Realtime Database</strong>, hébergée en Europe (région <code>europe-west1</code>).
+      </p>
+      <h3>Comment ça fonctionne</h3>
+      <ul>
+        <li>Un parent génère un <strong>code à 6 chiffres</strong> depuis l'app (Paramètres → Partage co-parental). À ce moment, ses données locales du bébé sélectionné sont copiées vers Firebase dans une « chambre » identifiée par ce code.</li>
+        <li>L'autre parent saisit ce code dans son app pour rejoindre la chambre. Les deux appareils se synchronisent alors en temps réel.</li>
+        <li>L'authentification se fait via Firebase Authentication en mode <strong>anonyme</strong> : aucun nom, e-mail, mot de passe ou identifiant personnel n'est demandé ni transmis. Un identifiant technique (UID) est généré aléatoirement par Firebase pour chaque appareil.</li>
+      </ul>
+      <h3>Données partagées si la synchronisation est active</h3>
+      <ul>
+        <li>Prénom du bébé, date de naissance, genre, indication « prématuré »</li>
+        <li>Historique du sommeil, alimentation, couches, notes</li>
+        <li>Routine du coucher (étapes complétées, série en cours)</li>
+        <li>Session de sommeil active (si en cours)</li>
+      </ul>
+      <p>
+        Les données du bien-être parental, la liste de tous vos bébés (multi-profils), et vos préférences restent uniquement sur votre appareil et ne sont jamais partagées.
+      </p>
+      <h3>Sécurité</h3>
+      <ul>
+        <li>Toutes les communications avec Firebase sont chiffrées en transit via HTTPS/TLS</li>
+        <li>Les données sont stockées dans l'infrastructure Google Cloud (région européenne)</li>
+        <li>Aucune information personnelle identifiable n'est associée aux données (pas de nom de parent, pas d'e-mail)</li>
+      </ul>
+      <h3>Désactivation et suppression</h3>
+      <p>
+        Vous pouvez à tout moment vous déconnecter de la synchronisation depuis Paramètres → Partage co-parental → « Déconnecter ». Le bouton « Tout effacer et redémarrer » dans la zone de danger des Paramètres efface également toutes les données locales et déconnecte la synchronisation. Les chambres Firebase inactives depuis plus de 90 jours sont automatiquement purgées.
+      </p>
+      <p>
+        Pour demander la suppression complète et immédiate d'une chambre Firebase (par exemple si vous souhaitez exercer votre droit à l'effacement RGPD), contactez-nous à l'adresse indiquée en section 9.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Sous-traitant : Google Firebase</h2>
+      <p>
+        Lorsque la synchronisation co-parentale est active, Google Ireland Limited (Google Firebase) agit en tant que sous-traitant au sens du RGPD. Les conditions contractuelles applicables sont disponibles ici : <a href="https://firebase.google.com/terms/data-processing-terms" target="_blank" rel="noopener">firebase.google.com/terms/data-processing-terms</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Aucun autre service tiers</h2>
+      <p>
+        En dehors de Firebase pour la synchronisation optionnelle, Bercea n'intègre <strong>aucun autre service tiers</strong> : pas d'analytics, pas de publicité, pas de crash reporting externe, pas de réseaux sociaux. L'application fonctionne par défaut entièrement hors ligne.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Données des enfants</h2>
+      <p>
+        Bercea est conçue pour les parents de nourrissons et jeunes enfants. L'application ne collecte aucune donnée directement auprès d'enfants. Les informations concernant le bébé sont saisies par le parent et restent sur son appareil (ou sont partagées avec son co-parent via Firebase si la synchronisation est activée par lui).
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Vos droits (RGPD)</h2>
+      <p>
+        Conformément au Règlement général sur la protection des données, vous disposez d'un droit d'accès, de rectification, d'effacement et de portabilité de vos données. Comme la majorité des données restent sur votre appareil, ces droits s'exercent directement depuis l'application (Paramètres → Mes bébés ; bouton « Tout effacer et redémarrer »).
+      </p>
+      <p>
+        Pour les données stockées dans Firebase (synchronisation active), votre droit à l'effacement s'exerce via le bouton « Déconnecter » dans le SyncPanel, le bouton « Tout effacer », ou par e-mail (section 9).
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Modifications de cette politique</h2>
+      <p>
+        En cas de modification, nous mettrons à jour la date en tête de page. Toute modification significative sera communiquée via une mise à jour de l'application.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Contact</h2>
+      <p>
+        Pour toute question concernant la confidentialité de Bercea, ou pour exercer vos droits RGPD :
+        <br><a href="mailto:contact@bercea.fr"><strong>contact@bercea.fr</strong></a>
+      </p>
+    </section>
+
+    <hr>
+
+    <h1 id="en">Privacy Policy</h1>
+    <p class="meta">Last updated: May 11, 2026 — Bercea v1.0.5</p>
+
+    <div class="summary">
+      <strong>Summary:</strong> By default, Bercea does not collect any data — everything stays on your device. You can <em>optionally</em> enable real-time co-parent sharing via a 6-digit code; only in that case, the baby's data is stored encrypted in Google Firebase Realtime Database, hosted in Europe.
+    </div>
+
+    <section>
+      <h2>1. Who we are</h2>
+      <p>
+        Bercea is a mobile app for tracking baby sleep, published by Julien Duval (sole proprietorship, France). Available on iOS (App Store) and Android (Google Play).
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Data stored locally</h2>
+      <p>
+        By default, all information you enter (baby's first name and birth date, sleep records, feedings, diapers, notes, bedtime routine, parental wellbeing) is stored <strong>only on your device</strong> via local storage (AsyncStorage). It never leaves your phone, unless you explicitly enable co-parent sharing (see section 3).
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Optional co-parent sharing (Firebase)</h2>
+      <p>
+        Bercea offers an optional feature allowing two parents to share the same baby's tracking in real-time across two devices. It uses <strong>Google Firebase Realtime Database</strong>, hosted in Europe (region <code>europe-west1</code>).
+      </p>
+      <h3>How it works</h3>
+      <ul>
+        <li>One parent generates a <strong>6-digit code</strong> from the app (Settings → Co-parent sharing). At that moment, their local data for the selected baby is copied to a Firebase "room" identified by this code.</li>
+        <li>The other parent enters this code in their app to join the room. Both devices then sync in real-time.</li>
+        <li>Authentication uses Firebase Authentication in <strong>anonymous</strong> mode: no name, email, password or personal identifier is requested or transmitted. A random technical identifier (UID) is generated by Firebase for each device.</li>
+      </ul>
+      <h3>Data shared if sync is active</h3>
+      <ul>
+        <li>Baby's first name, birth date, gender, "premature" flag</li>
+        <li>Sleep, feeding, diaper, notes history</li>
+        <li>Bedtime routine (completed steps, current streak)</li>
+        <li>Active sleep session (if ongoing)</li>
+      </ul>
+      <p>
+        Parental wellbeing data, the list of all your babies (multi-profiles), and your preferences remain on your device only and are never shared.
+      </p>
+      <h3>Security</h3>
+      <ul>
+        <li>All communications with Firebase are encrypted in transit via HTTPS/TLS</li>
+        <li>Data is stored in Google Cloud infrastructure (European region)</li>
+        <li>No personally identifiable information is associated with the data (no parent name, no email)</li>
+      </ul>
+      <h3>Disabling and deleting</h3>
+      <p>
+        You can disconnect from sync at any time via Settings → Co-parent sharing → "Disconnect". The "Reset app" button in the danger zone of Settings also erases all local data and disconnects sync. Firebase rooms inactive for more than 90 days are automatically purged. For immediate full deletion of a Firebase room, contact us at the address in section 9.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Subprocessor: Google Firebase</h2>
+      <p>
+        When co-parent sync is active, Google Ireland Limited (Google Firebase) acts as a subprocessor under GDPR. The applicable contractual terms are available at: <a href="https://firebase.google.com/terms/data-processing-terms" target="_blank" rel="noopener">firebase.google.com/terms/data-processing-terms</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. No other third-party services</h2>
+      <p>
+        Apart from Firebase for optional sync, Bercea integrates <strong>no other third-party service</strong>: no analytics, no advertising, no crash reporting, no social media. The app works fully offline by default.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Children's data</h2>
+      <p>
+        Bercea is designed for parents of infants and young children. The app does not collect any data directly from children. Information about the baby is entered by the parent and remains on their device (or is shared with their co-parent via Firebase if sync is activated by them).
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Your rights (GDPR)</h2>
+      <p>
+        Under the General Data Protection Regulation, you have rights of access, rectification, erasure, and portability. As most data stays on your device, these rights are exercised directly from the app (Settings → My babies; "Reset app" button).
+      </p>
+      <p>
+        For data stored in Firebase (sync active), your right to erasure is exercised via the "Disconnect" button in the SyncPanel, the "Reset app" button, or by email (section 9).
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Changes to this policy</h2>
+      <p>
+        We will update the date at the top of the page if changes occur. Significant changes will also be communicated via an app update.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Contact</h2>
+      <p>
+        For any privacy-related question, or to exercise your GDPR rights:
+        <br><a href="mailto:contact@bercea.fr"><strong>contact@bercea.fr</strong></a>
+      </p>
+    </section>
+
   </div>
-
-  <section>
-    <h2>1. Qui sommes-nous ?</h2>
-    <p>
-      Bercea est une application mobile de suivi du sommeil de bébé, développée par Julie Breton.
-      L'application est disponible sur iOS (App Store) et Android (Google Play).
-    </p>
-  </section>
-
-  <section>
-    <h2>2. Données collectées</h2>
-    <p>
-      <strong>Bercea ne collecte aucune donnée.</strong>
-    </p>
-    <p>
-      Toutes les informations que vous saisissez dans l'application (nom du bébé, date de naissance,
-      enregistrements de sommeil, repas, couches, notes, données de bien-être parental)
-      sont stockées <strong>exclusivement sur votre appareil</strong> via le stockage local.
-    </p>
-    <p>
-      Nous ne transmettons aucune de ces données à des serveurs, tiers ou services externes.
-    </p>
-  </section>
-
-  <section>
-    <h2>3. Accès au microphone</h2>
-    <p>
-      Bercea peut demander l'accès au microphone pour une fonctionnalité de détection sonore optionnelle.
-      Cette autorisation est facultative et peut être refusée sans affecter les fonctionnalités principales.
-      Aucun enregistrement audio n'est conservé ni transmis.
-    </p>
-  </section>
-
-  <section>
-    <h2>4. Services tiers</h2>
-    <p>
-      Bercea n'intègre aucun service tiers (analytics, publicité, crash reporting, réseaux sociaux).
-      L'application fonctionne entièrement hors ligne.
-    </p>
-  </section>
-
-  <section>
-    <h2>5. Données des enfants</h2>
-    <p>
-      Bercea est conçue pour les parents de nourrissons. L'application ne collecte aucune donnée
-      directement auprès d'enfants, et toutes les informations concernant le bébé restent
-      sur l'appareil du parent/tuteur.
-    </p>
-  </section>
-
-  <section>
-    <h2>6. Suppression de vos données</h2>
-    <p>
-      Vos données peuvent être supprimées à tout moment depuis les réglages de l'application,
-      ou en désinstallant Bercea. La désinstallation supprime définitivement toutes les données locales.
-    </p>
-  </section>
-
-  <section>
-    <h2>7. Modifications de cette politique</h2>
-    <p>
-      En cas de modification de cette politique, nous mettrons à jour la date ci-dessous.
-      Toute modification significative sera communiquée via une mise à jour de l'application.
-    </p>
-  </section>
-
-  <section>
-    <h2>8. Contact</h2>
-    <p>
-      Pour toute question concernant la confidentialité de Bercea, vous pouvez nous contacter à :
-      <br><strong>contact@bercea.fr</strong>
-    </p>
-  </section>
-
 </main>
 
-<footer>
-  <p>Dernière mise à jour : avril 2026 · Bercea Baby Sleep</p>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="/fr/" class="logo"><img src="assets/icons/logo.svg" alt=""><span>Bercea</span></a>
+        <p>L'app qui aide votre bébé à mieux dormir. Basée sur la science, pensée pour les vrais parents.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Produit</h4>
+        <ul>
+          <li><a href="/fr/fonctionnalites">Fonctionnalités</a></li>
+          <li><a href="/fr/science">Science</a></li>
+          <li><a href="/fr/ebooks">E-books</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="/fr/contact">Contact</a></li>
+          <li><a href="/privacy">Confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Langue</h4>
+        <ul>
+          <li><a href="/fr/">🇫🇷 Français</a></li>
+          <li><a href="/en/">🇬🇧 English</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Bercea — <a href="mailto:contact@bercea.fr">contact@bercea.fr</a>
+    </div>
+  </div>
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>

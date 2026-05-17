@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bercea.app/fr/</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bercea.app/fr/"/>
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://bercea.app/fr/fonctionnalites</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/fonctionnalites"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/features"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bercea.app/fr/"/>
@@ -19,7 +19,7 @@
   </url>
   <url>
     <loc>https://bercea.app/fr/science</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/science"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/science"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bercea.app/fr/"/>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://bercea.app/fr/ebooks</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/ebooks"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/ebooks"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bercea.app/fr/"/>
@@ -35,7 +35,7 @@
   </url>
   <url>
     <loc>https://bercea.app/fr/contact</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/contact"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/contact"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bercea.app/fr/"/>
@@ -43,7 +43,7 @@
   </url>
   <url>
     <loc>https://bercea.app/en/</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bercea.app/fr/"/>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://bercea.app/en/features</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/fonctionnalites"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/features"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bercea.app/fr/"/>
@@ -59,7 +59,7 @@
   </url>
   <url>
     <loc>https://bercea.app/en/science</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/science"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/science"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bercea.app/fr/"/>
@@ -67,7 +67,7 @@
   </url>
   <url>
     <loc>https://bercea.app/en/ebooks</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/ebooks"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/ebooks"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bercea.app/fr/"/>
@@ -75,7 +75,7 @@
   </url>
   <url>
     <loc>https://bercea.app/en/contact</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/contact"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/contact"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bercea.app/fr/"/>
@@ -83,7 +83,7 @@
   </url>
   <url>
     <loc>https://bercea.app/privacy</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <priority>0.3</priority>
   </url>
 </urlset>

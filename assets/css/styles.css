@@ -610,6 +610,58 @@ textarea { resize: vertical; min-height: 140px; }
   color: var(--text-muted);
 }
 
+/* ========= Brand illustrations (painted) ========= */
+.hero-visual img.illustration {
+  max-width: 540px;
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: var(--shadow-lg);
+  filter: drop-shadow(0 24px 50px rgba(167, 139, 250, 0.25));
+}
+
+/* "How it works" triptych */
+.howto-illustration {
+  max-width: 780px;
+  margin: 0 auto 2.5rem;
+}
+.howto-illustration img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+.howto-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 760px) {
+  .howto-steps { grid-template-columns: 1fr; }
+}
+.howto-step .step-num {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: .85rem;
+}
+.howto-step h3 { color: #fff; margin-bottom: .4rem; }
+.howto-step p { font-size: 0.95rem; }
+
+/* Co-parent showcase — landscape painted illustration */
+.showcase-visual.illustration img {
+  max-width: 540px;
+  border-radius: 24px;
+  box-shadow: var(--shadow-lg);
+}
+
 /* ========= Utilities ========= */
 .text-center { text-align: center; }
 .mt-2 { margin-top: 2rem; }

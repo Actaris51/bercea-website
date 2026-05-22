@@ -261,6 +261,19 @@ p { color: var(--text-dim); }
   font-weight: 700;
   letter-spacing: -.01em;
 }
+.store-badge-img {
+  display: inline-block;
+  transition: transform .2s, opacity .2s;
+}
+.store-badge-img:hover {
+  transform: translateY(-2px);
+  opacity: .85;
+}
+.store-badge-img img {
+  display: block;
+  height: 48px;
+  width: auto;
+}
 @media (max-width: 820px) {
   .store-badges { justify-content: center; }
 }

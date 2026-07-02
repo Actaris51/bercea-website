@@ -488,6 +488,89 @@ section { padding: clamp(3rem, 6vw, 5rem) 0; }
 .science-block p { margin-bottom: 1rem; }
 .science-block p:last-child { margin-bottom: 0; }
 
+/* ========= Guide articles ========= */
+.guide-article {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.guide-article h2 {
+  margin-top: 2.5rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+}
+.guide-article h3 { margin-top: 1.75rem; }
+.guide-article p { margin-bottom: 1rem; }
+.guide-article ul, .guide-article ol {
+  color: var(--text-dim);
+  margin: 0 0 1rem 1.25rem;
+}
+.guide-article li { margin-bottom: .4rem; }
+.guide-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: .85rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+.guide-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: .95rem;
+  overflow-x: auto;
+  display: block;
+}
+.guide-table thead th {
+  background: var(--bg-3);
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+  padding: .75rem 1rem;
+  white-space: nowrap;
+}
+.guide-table tbody td {
+  padding: .7rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+.guide-table tbody tr:hover { background: rgba(167, 139, 250, 0.05); }
+.guide-table td:first-child { color: #fff; font-weight: 600; }
+.guide-note {
+  background: rgba(251, 191, 36, 0.08);
+  border-left: 3px solid var(--accent-warm);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--text-dim);
+  font-size: .95rem;
+}
+.guide-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.guide-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  transition: transform .2s, border-color .2s;
+  display: block;
+}
+.guide-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(167, 139, 250, 0.4);
+}
+.guide-card h3 { color: #fff; margin-bottom: .5rem; }
+.guide-card p { color: var(--text-dim); font-size: .95rem; margin: 0; }
+.guide-card .read-time {
+  display: inline-block;
+  font-size: .8rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+
 /* ========= Ebook cards ========= */
 .ebook-grid {
   display: grid;

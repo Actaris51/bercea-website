@@ -92,20 +92,71 @@
   <url>
     <loc>https://bercea.app/fr/guide/</loc>
     <lastmod>2026-07-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/guide/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/guide/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/en/guide/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/guide/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/guide/"/>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bercea.app/fr/guide/fenetres-eveil-bebe</loc>
     <lastmod>2026-07-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/guide/fenetres-eveil-bebe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/guide/wake-windows-by-age"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/en/guide/wake-windows-by-age</loc>
+    <lastmod>2026-07-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/guide/fenetres-eveil-bebe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/guide/wake-windows-by-age"/>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bercea.app/fr/guide/regression-sommeil-4-mois</loc>
     <lastmod>2026-07-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/guide/regression-sommeil-4-mois"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/guide/4-month-sleep-regression"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/en/guide/4-month-sleep-regression</loc>
+    <lastmod>2026-07-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/guide/regression-sommeil-4-mois"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/guide/4-month-sleep-regression"/>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bercea.app/fr/guide/bruit-blanc-bebe</loc>
+    <lastmod>2026-07-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/guide/bruit-blanc-bebe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/guide/white-noise-for-babies"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/en/guide/white-noise-for-babies</loc>
+    <lastmod>2026-07-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bercea.app/fr/guide/bruit-blanc-bebe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bercea.app/en/guide/white-noise-for-babies"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/fr/guide/combien-dort-un-bebe</loc>
+    <lastmod>2026-07-02</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/fr/guide/routine-coucher-bebe</loc>
+    <lastmod>2026-07-02</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bercea.app/fr/guide/passage-une-sieste</loc>
     <lastmod>2026-07-02</lastmod>
     <priority>0.9</priority>
   </url>

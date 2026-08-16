@@ -75,7 +75,11 @@
 
 <main>
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero hero--video">
+    <video class="hero-bg" autoplay muted loop playsinline poster="../assets/video/hero-poster.jpg" aria-hidden="true" tabindex="-1">
+      <source src="../assets/video/hero-loop.mp4" type="video/mp4">
+    </video>
+    <div class="hero-bg-overlay" aria-hidden="true"></div>
     <div class="container hero-grid">
       <div>
         <span class="hero-badge">✦ <a href="https://apps.apple.com/fr/app/bercea-sommeil-bébé/id6762083340" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Disponible sur l'App Store (iPhone)</a> et <a href="https://play.google.com/store/apps/details?id=com.bercea.babysleep" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Google Play Store (Android)</a></span>
@@ -92,9 +96,6 @@
           </div>
           <a href="fonctionnalites" class="btn btn-ghost">Voir les fonctionnalités</a>
         </div>
-      </div>
-      <div class="hero-visual">
-        <img class="illustration" src="../assets/img/illustrations/hero.jpg" alt="Un parent berce son bébé endormi près de la fenêtre, sous une lune bienveillante" width="1280" height="731" loading="eager" fetchpriority="high" decoding="async">
       </div>
     </div>
   </section>

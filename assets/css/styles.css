@@ -302,6 +302,15 @@ p { color: var(--text-dim); }
   .hero--video { background: #0f1329 url("../video/hero-poster.jpg") center/cover no-repeat; }
   .hero--video .hero-bg-overlay { background: rgba(15,19,41,0.68); }
 }
+/* Light hero video variant — dark text over a pale/dawn loop */
+.hero--light .hero-bg-overlay { background: rgba(250,247,244,0.20); }
+.hero--light .section-header .eyebrow { color: #6f62a0; }
+.hero--light h1 { color: #1a1f3a; }
+.hero--light .section-header p, .hero--light p.lead, .hero--light p { color: #3a3f52; }
+@media (max-width: 820px) {
+  .hero--video.hero--light { background: #ece9f2 url("../video/hero-dawn-poster.jpg") center/cover no-repeat; }
+  .hero--video.hero--light .hero-bg-overlay { background: rgba(250,247,244,0.22); }
+}
 .hero-grid {
   display: grid;
   grid-template-columns: 1.1fr 1fr;

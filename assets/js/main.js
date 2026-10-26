@@ -39,7 +39,7 @@
     const name = encodeURIComponent(form.querySelector('[name=name]').value || '');
     const email = encodeURIComponent(form.querySelector('[name=email]').value || '');
     const message = encodeURIComponent(form.querySelector('[name=message]').value || '');
-    const subject = encodeURIComponent('Contact Bercea — ' + (name || 'Message'));
+    const subject = encodeURIComponent('Contact Bercea : ' + (name || 'Message'));
     const body = `${decodeURIComponent(message)}%0D%0A%0D%0A--%0D%0A${decodeURIComponent(name)}%0D%0A${decodeURIComponent(email)}`;
     window.location.href = `mailto:contact@bercea.fr?subject=${subject}&body=${body}`;
   });

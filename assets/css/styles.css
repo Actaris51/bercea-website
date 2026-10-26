@@ -1,4 +1,4 @@
-/* ========= LUMI — Design System ========= */
+/* ========= Bercea : Design System ========= */
 :root {
   --bg: #0f1329;
   --bg-2: #1a1f3a;
@@ -302,7 +302,7 @@ p { color: var(--text-dim); }
   .hero--video { background: #0f1329 url("../video/hero-poster.jpg") center/cover no-repeat; }
   .hero--video .hero-bg-overlay { background: rgba(15,19,41,0.68); }
 }
-/* Light hero video variant — dark text over a pale/dawn loop */
+/* Light hero video variant: dark text over a pale/dawn loop */
 .hero--light .hero-bg-overlay { background: rgba(250,247,244,0.20); }
 .hero--light .section-header .eyebrow { color: #6f62a0; }
 .hero--light h1 { color: #1a1f3a; }
@@ -847,7 +847,7 @@ textarea { resize: vertical; min-height: 140px; }
 .howto-step h3 { color: #fff; margin-bottom: .4rem; }
 .howto-step p { font-size: 0.95rem; }
 
-/* Co-parent showcase — landscape painted illustration */
+/* Co-parent showcase: landscape painted illustration */
 .showcase-visual.illustration img {
   max-width: 540px;
   border-radius: 24px;

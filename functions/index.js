@@ -4,11 +4,11 @@
 // prenait pour la même page que /en/ et n'indexait plus /en/. Une redirection
 // n'est pas un doublon : /fr/ et /en/ sont indexées chacune de leur côté.
 //
-// La première langue du navigateur parmi celles du site (fr, en, de),
+// La première langue du navigateur parmi celles du site (fr, en, de, es),
 // l'anglais pour toutes les autres. Seule la racine passe par ici ; les autres
 // adresses restent des fichiers statiques.
 
-const LANGUES = ['fr', 'en', 'de'];
+const LANGUES = ['fr', 'en', 'de', 'es'];
 
 export function langueDe(acceptLanguage) {
   for (const partie of (acceptLanguage || '').split(',')) {

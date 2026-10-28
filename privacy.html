@@ -140,7 +140,7 @@
     </div>
 
     <h1 id="fr">Politique de confidentialité</h1>
-    <p class="meta">Dernière mise à jour : 26 octobre 2026 · Bercea 1.10</p>
+    <p class="meta">Dernière mise à jour : 28 octobre 2026 · Bercea 1.10</p>
 
     <div class="summary">
       <strong>En résumé :</strong> par défaut, tout ce que vous saisissez reste sur votre téléphone. Si vous choisissez de partager le suivi avec l'autre parent, les données du bébé partagé sont copiées dans Firebase Realtime Database, un service de Google hébergé en Europe, à une adresse aléatoire et avec une connexion anonyme. Aucun compte, aucune publicité, aucun traceur.
@@ -149,14 +149,14 @@
     <section>
       <h2>1. Qui sommes-nous ?</h2>
       <p>
-        Bercea est une application mobile de suivi du sommeil de bébé, éditée par Julien Duval (entreprise individuelle, France). L'application est disponible sur iOS (App Store) et Android (Google Play).
+        Bercea est une application mobile de suivi du sommeil de bébé, éditée par Julien Duval (entreprise individuelle, France). L'application est disponible sur iOS (App Store) et Android (Google Play). Pour les données que vous choisissez de partager (section 3), le responsable du traitement est Julien Duval, joignable à <a href="mailto:contact@bercea.fr">contact@bercea.fr</a>.
       </p>
     </section>
 
     <section>
       <h2>2. Données stockées sur votre téléphone</h2>
       <p>
-        Par défaut, tout ce que vous saisissez (prénom et date de naissance du bébé, sommeil, repas, couches, notes, carnet de santé, routine du coucher, bien-être parental) est enregistré <strong>uniquement sur votre téléphone</strong>, dans le stockage de l'application. Désinstaller l'application efface ces données.
+        Par défaut, tout ce que vous saisissez (prénom et date de naissance du bébé, sommeil, repas, couches, notes, carnet de santé, routine du coucher, bien-être parental) est enregistré <strong>uniquement sur votre téléphone</strong>, dans le stockage de l'application. Désinstaller l'application efface ces données. Bercea ne reçoit pas ces données et n'y a pas accès.
       </p>
       <p>
         Elles ne quittent votre téléphone que si vous activez le partage avec l'autre parent (section 3), ou si vous envoyez vous-même le rapport PDF pour le pédiatre, qui est créé sur votre téléphone.
@@ -185,6 +185,10 @@
       <p>
         Votre bien-être, vos réponses au bilan sommeil, vos autres bébés et vos réglages restent uniquement sur votre téléphone et ne sont jamais partagés.
       </p>
+      <h3>Base légale</h3>
+      <p>
+        Le partage repose sur votre consentement, que vous donnez en l'activant. Comme le journal contient des données de santé de votre enfant (sommeil, alimentation, vaccins, croissance), ce consentement doit être explicite au sens de l'article 9 du RGPD. Vous pouvez le retirer à tout moment en arrêtant le partage. Pour faire effacer ce qui a déjà été partagé, écrivez-nous (section 10).
+      </p>
       <h3>Sécurité</h3>
       <ul>
         <li>Les échanges avec Firebase sont chiffrés (HTTPS/TLS), et Google chiffre les données qu'il stocke</li>
@@ -196,53 +200,69 @@
         Vous pouvez arrêter le partage à tout moment (Paramètres → Co-parent → « Déconnecter »). Le bouton « Supprimer mes données et mon compte », dans les paramètres, efface toutes les données de ce téléphone et le déconnecte du partage. Les données déjà partagées restent accessibles à l'autre parent.
       </p>
       <p>
-        Pour faire effacer l'espace partagé (droit à l'effacement du RGPD), écrivez-nous à l'adresse de la section 9.
+        Pour faire effacer l'espace partagé (droit à l'effacement du RGPD), écrivez-nous à l'adresse de la section 10.
       </p>
     </section>
 
     <section>
-      <h2>4. Sous-traitants</h2>
+      <h2>4. Sous-traitants et transferts hors de l'Union européenne</h2>
       <p>
         Quand le partage est actif, Google Ireland Limited (Firebase) agit en tant que sous-traitant au sens du RGPD : <a href="https://firebase.google.com/terms/data-processing-terms" target="_blank" rel="noopener">firebase.google.com/terms/data-processing-terms</a>.
       </p>
+      <ul>
+        <li>Firebase Realtime Database, qui contient les données partagées, est hébergée en Belgique (région <code>europe-west1</code>).</li>
+        <li>Firebase Authentication, qui crée l'identifiant anonyme de chaque téléphone, fonctionne depuis des centres de données situés aux États-Unis : cet identifiant et l'adresse IP de connexion y sont traités. Firebase App Check peut traiter ses vérifications dans n'importe quel centre de données de Google. Aucune donnée de votre bébé ne passe par ces deux services.</li>
+        <li>Ces transferts sont encadrés par le Data Privacy Framework UE-États-Unis, auquel Google adhère, et que la Commission européenne a reconnu par une décision d'adéquation du 10 juillet 2023.</li>
+      </ul>
       <p>
-        Les mises à jour de l'application passent par le service Expo (EAS Update), qui reçoit les informations techniques d'une demande de mise à jour (plateforme, version de l'application) et aucune de vos saisies.
+        Les mises à jour de l'application passent par Expo (EAS Update), service de la société américaine 650 Industries. Expo reçoit l'adresse IP et les informations techniques d'une demande de mise à jour (plateforme, version de l'application), et aucune de vos saisies.
       </p>
     </section>
 
     <section>
-      <h2>5. Aucun traceur</h2>
+      <h2>5. Durée de conservation</h2>
+      <ul>
+        <li><strong>Données sur votre téléphone</strong> : jusqu'à ce que vous les effaciez ou que vous désinstalliez l'application.</li>
+        <li><strong>Espace partagé</strong> : conservé tant que le partage est utilisé, et effacé à votre demande dans un délai d'un mois.</li>
+        <li><strong>Invitations</strong> : une invitation ne contient que l'adresse de l'espace partagé, aucune donnée sur le bébé. Elle n'est plus lisible après 15 minutes ou après usage.</li>
+        <li><strong>Identifiant anonyme</strong> : conservé jusqu'à l'effacement de l'espace partagé. Google conserve l'adresse IP de connexion quelques semaines.</li>
+        <li>Après un effacement, Google retire les données de ses sauvegardes sous 180 jours au plus.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Aucun traceur</h2>
       <p>
         Bercea n'intègre <strong>aucun outil d'analyse, aucune publicité, aucun traceur</strong>, ni service de rapport de plantage externe. En dehors du partage facultatif et des mises à jour, l'application fonctionne hors connexion.
       </p>
     </section>
 
     <section>
-      <h2>6. Données des enfants et de santé</h2>
+      <h2>7. Données des enfants et de santé</h2>
       <p>
         Bercea est conçue pour les parents de nourrissons et de jeunes enfants. L'application ne collecte aucune donnée directement auprès d'enfants. Les informations sur le bébé, dont ses données de santé (sommeil, alimentation, vaccins, réactions aux aliments), sont saisies par le parent et restent sur son téléphone, ou sont partagées avec l'autre parent s'il active le partage.
       </p>
     </section>
 
     <section>
-      <h2>7. Vos droits (RGPD)</h2>
+      <h2>8. Vos droits (RGPD)</h2>
       <p>
-        Vous disposez d'un droit d'accès, de rectification, d'effacement et de portabilité de vos données. Les données sur votre téléphone se consultent, se corrigent et s'effacent dans l'application (« Supprimer mes données et mon compte »).
+        Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et de portabilité de vos données, ainsi que du droit de retirer votre consentement à tout moment. Les données sur votre téléphone se consultent, se corrigent et s'effacent dans l'application (« Supprimer mes données et mon compte »).
       </p>
       <p>
-        Pour les données d'un espace partagé, écrivez-nous (section 9) : nous les effaçons à votre demande.
+        Pour les données d'un espace partagé, écrivez-nous (section 10) : nous répondons dans un délai d'un mois. Si vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener">cnil.fr</a>) ou à l'autorité de protection des données de votre pays de résidence.
       </p>
     </section>
 
     <section>
-      <h2>8. Modifications de cette politique</h2>
+      <h2>9. Modifications de cette politique</h2>
       <p>
         En cas de modification, nous mettons à jour la date en tête de page. Toute modification importante est annoncée dans une mise à jour de l'application.
       </p>
     </section>
 
     <section>
-      <h2>9. Contact</h2>
+      <h2>10. Contact</h2>
       <p>
         Pour toute question sur la confidentialité de Bercea, ou pour exercer vos droits :
         <br><a href="mailto:contact@bercea.fr"><strong>contact@bercea.fr</strong></a>
@@ -252,7 +272,7 @@
     <hr>
 
     <h1 id="en">Privacy Policy</h1>
-    <p class="meta">Last updated: October 26, 2026 · Bercea 1.10</p>
+    <p class="meta">Last updated: October 28, 2026 · Bercea 1.10</p>
 
     <div class="summary">
       <strong>Summary:</strong> by default, everything you enter stays on your phone. If you choose to share tracking with the other parent, the shared baby's data is copied to Firebase Realtime Database, a Google service hosted in Europe, at a random address and with anonymous sign-in. No account, no ads, no trackers.
@@ -261,14 +281,14 @@
     <section>
       <h2>1. Who we are</h2>
       <p>
-        Bercea is a mobile app for tracking baby sleep, published by Julien Duval (sole proprietorship, France). It is available on iOS (App Store) and Android (Google Play).
+        Bercea is a mobile app for tracking baby sleep, published by Julien Duval (sole proprietorship, France). It is available on iOS (App Store) and Android (Google Play). For the data you choose to share (section 3), the data controller is Julien Duval, who can be reached at <a href="mailto:contact@bercea.fr">contact@bercea.fr</a>.
       </p>
     </section>
 
     <section>
       <h2>2. Data stored on your phone</h2>
       <p>
-        By default, everything you enter (baby's first name and birth date, sleep, feeds, diapers, notes, health record, bedtime routine, parental wellbeing) is saved <strong>only on your phone</strong>, in the app's storage. Uninstalling the app deletes this data.
+        By default, everything you enter (baby's first name and birth date, sleep, feeds, diapers, notes, health record, bedtime routine, parental wellbeing) is saved <strong>only on your phone</strong>, in the app's storage. Uninstalling the app deletes this data. Bercea does not receive this data and has no access to it.
       </p>
       <p>
         It only leaves your phone if you turn on sharing with the other parent (section 3), or if you send the PDF report for the doctor yourself; that report is created on your phone.
@@ -297,6 +317,10 @@
       <p>
         Your wellbeing, your sleep check-up answers, your other babies and your settings stay only on your phone and are never shared.
       </p>
+      <h3>Legal basis</h3>
+      <p>
+        Sharing is based on your consent, which you give by turning it on. Because the log contains your child's health data (sleep, feeding, vaccines, growth), this consent must be explicit within the meaning of Article 9 of the GDPR. You can withdraw it at any time by stopping sharing. To have what has already been shared deleted, write to us (section 10).
+      </p>
       <h3>Security</h3>
       <ul>
         <li>Exchanges with Firebase are encrypted (HTTPS/TLS), and Google encrypts the data it stores</li>
@@ -308,53 +332,69 @@
         You can stop sharing at any time (Settings → Co-parent → "Disconnect"). The "Delete my data and my account" button, in Settings, erases all data from this phone and disconnects it from sharing. Data already shared stays available to the other parent.
       </p>
       <p>
-        To have the shared space deleted (GDPR right to erasure), write to us at the address in section 9.
+        To have the shared space deleted (GDPR right to erasure), write to us at the address in section 10.
       </p>
     </section>
 
     <section>
-      <h2>4. Subprocessors</h2>
+      <h2>4. Processors and transfers outside the European Union</h2>
       <p>
-        While sharing is on, Google Ireland Limited (Firebase) acts as a subprocessor under the GDPR: <a href="https://firebase.google.com/terms/data-processing-terms" target="_blank" rel="noopener">firebase.google.com/terms/data-processing-terms</a>.
+        While sharing is on, Google Ireland Limited (Firebase) acts as a processor under the GDPR: <a href="https://firebase.google.com/terms/data-processing-terms" target="_blank" rel="noopener">firebase.google.com/terms/data-processing-terms</a>.
       </p>
+      <ul>
+        <li>Firebase Realtime Database, which holds the shared data, is hosted in Belgium (region <code>europe-west1</code>).</li>
+        <li>Firebase Authentication, which creates each phone's anonymous identifier, runs from data centers in the United States: this identifier and the connection's IP address are processed there. Firebase App Check may run its checks in any Google data center. None of your baby's data goes through these two services.</li>
+        <li>These transfers are covered by the EU-U.S. Data Privacy Framework, which Google has joined and which the European Commission recognized in an adequacy decision of July 10, 2023.</li>
+      </ul>
       <p>
-        App updates go through the Expo service (EAS Update), which receives the technical details of an update request (platform, app version) and none of your entries.
+        App updates go through Expo (EAS Update), a service of the U.S. company 650 Industries. Expo receives the IP address and the technical details of an update request (platform, app version), and none of your entries.
       </p>
     </section>
 
     <section>
-      <h2>5. No trackers</h2>
+      <h2>5. Retention</h2>
+      <ul>
+        <li><strong>Data on your phone</strong>: until you delete it or uninstall the app.</li>
+        <li><strong>Shared space</strong>: kept as long as sharing is in use, and deleted at your request within one month.</li>
+        <li><strong>Invitations</strong>: an invitation only contains the shared space's address, no data about the baby. It can no longer be read after 15 minutes or once used.</li>
+        <li><strong>Anonymous identifier</strong>: kept until the shared space is deleted. Google keeps the connection's IP address for a few weeks.</li>
+        <li>After a deletion, Google removes the data from its backups within 180 days at most.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. No trackers</h2>
       <p>
         Bercea includes <strong>no analytics, no ads, no trackers</strong>, and no external crash reporting. Apart from optional sharing and updates, the app works offline.
       </p>
     </section>
 
     <section>
-      <h2>6. Children's and health data</h2>
+      <h2>7. Children's and health data</h2>
       <p>
         Bercea is designed for parents of infants and young children. The app collects no data directly from children. Information about the baby, including health data (sleep, feeding, vaccines, food reactions), is entered by the parent and stays on their phone, or is shared with the other parent if they turn on sharing.
       </p>
     </section>
 
     <section>
-      <h2>7. Your rights (GDPR)</h2>
+      <h2>8. Your rights (GDPR)</h2>
       <p>
-        You have the right to access, correct, erase and port your data. Data on your phone can be viewed, corrected and erased in the app ("Delete my data and my account").
+        You have the right to access, correct, erase, restrict and port your data, as well as the right to withdraw your consent at any time. Data on your phone can be viewed, corrected and erased in the app ("Delete my data and my account").
       </p>
       <p>
-        For data in a shared space, write to us (section 9): we delete it on request.
+        For data in a shared space, write to us (section 10): we reply within one month. If you believe your rights are not respected, you can lodge a complaint with the CNIL (<a href="https://www.cnil.fr" target="_blank" rel="noopener">cnil.fr</a>), the French data protection authority, or with the data protection authority of your country of residence.
       </p>
     </section>
 
     <section>
-      <h2>8. Changes to this policy</h2>
+      <h2>9. Changes to this policy</h2>
       <p>
         If this policy changes, we update the date at the top of the page. Any significant change is announced in an app update.
       </p>
     </section>
 
     <section>
-      <h2>9. Contact</h2>
+      <h2>10. Contact</h2>
       <p>
         For any question about Bercea's privacy, or to exercise your rights:
         <br><a href="mailto:contact@bercea.fr"><strong>contact@bercea.fr</strong></a>

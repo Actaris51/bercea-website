@@ -178,7 +178,9 @@ p { color: var(--text-dim); }
   cursor: pointer;
   padding: .5rem;
 }
-@media (max-width: 820px) {
+/* Collapsed below 1024px: with five language pills, the full French menu
+   needs about 980px and overlapped the logo on small laptops and tablets. */
+@media (max-width: 1024px) {
   .nav-toggle { display: block; }
   .nav {
     position: fixed;

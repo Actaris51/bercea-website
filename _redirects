@@ -1,0 +1,6 @@
+# Documents internes du dépôt : Cloudflare Pages publie tout le dossier, et
+# ceux-ci ne sont pas faits pour les visiteurs (ni pour Google).
+# Une redirection l'emporte sur un fichier existant à la même adresse.
+/DEPLOIEMENT.md / 301
+/BRAND.md / 301
+/.gitignore / 301

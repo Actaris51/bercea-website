@@ -8,10 +8,8 @@
 <meta name="description" content="Application gratuite de suivi du sommeil de bébé : prochaine sieste, heure du coucher, carnet de santé, diversification et bilan sommeil. Sans compte, sans pub.">
 <meta name="theme-color" content="#0f1329">
 <link rel="icon" href="../assets/icons/logo.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/styles.css?v=20261028">
 <link rel="canonical" href="https://bercea.app/fr/">
 <meta property="og:title" content="Bercea : application gratuite de suivi du sommeil de bébé">
 <meta property="og:description" content="Le bon moment pour coucher bébé, un carnet de santé et la diversification au même endroit. Gratuit, sans compte, sans pub.">
@@ -49,6 +47,34 @@
   "privacyPolicy": "https://bercea.app/privacy"
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://bercea.app/#site",
+      "name": "Bercea",
+      "alternateName": "Bercea : Sommeil Bébé",
+      "url": "https://bercea.app/",
+      "inLanguage": ["fr", "en"],
+      "publisher": { "@id": "https://bercea.app/#editeur" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bercea.app/#editeur",
+      "name": "Bercea",
+      "url": "https://bercea.app/",
+      "logo": { "@type": "ImageObject", "url": "https://bercea.app/assets/icons/bercea-512.png", "width": 512, "height": 512 },
+      "sameAs": [
+        "https://instagram.com/bercea.app",
+        "https://apps.apple.com/fr/app/bercea-sommeil-bébé/id6762083340",
+        "https://play.google.com/store/apps/details?id=com.bercea.babysleep"
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="stars" aria-hidden="true"></div>
@@ -78,7 +104,7 @@
 <main>
   <!-- Hero -->
   <section class="hero hero--video">
-    <video class="hero-bg" autoplay muted loop playsinline preload="auto" poster="../assets/video/hero-poster.jpg" aria-hidden="true" tabindex="-1">
+    <video class="hero-bg" muted loop playsinline preload="none" poster="../assets/video/hero-poster.webp" data-autoplay aria-hidden="true" tabindex="-1">
       <source src="../assets/video/hero-loop.webm" type="video/webm">
       <source src="../assets/video/hero-loop.mp4" type="video/mp4">
     </video>
@@ -91,10 +117,10 @@
         <div class="hero-ctas">
           <div class="store-badges">
             <a href="https://apps.apple.com/fr/app/bercea-sommeil-bébé/id6762083340" target="_blank" rel="noopener" class="store-badge-img" aria-label="Télécharger sur l'App Store">
-              <img src="../assets/badges/appstore-fr.svg" alt="Télécharger sur l'App Store" height="48" style="height:48px;width:auto;display:block;">
+              <img src="../assets/badges/appstore-fr.svg" alt="Télécharger sur l'App Store" width="152" height="48" style="height:48px;width:auto;display:block;">
             </a>
             <a href="https://play.google.com/store/apps/details?id=com.bercea.babysleep" target="_blank" rel="noopener" class="store-badge-img" aria-label="Télécharger sur Google Play">
-              <img src="../assets/badges/googleplay-fr.png" alt="Disponible sur Google Play" height="48" style="height:48px;width:auto;display:block;">
+              <img src="../assets/badges/googleplay-fr.png" alt="Disponible sur Google Play" width="124" height="48" style="height:48px;width:auto;display:block;">
             </a>
           </div>
           <a href="fonctionnalites" class="btn btn-ghost">Voir les fonctionnalités</a>
@@ -140,7 +166,7 @@
         <p>Pas de réglages compliqués. Vous notez, Bercea apprend, et vous couchez bébé au bon moment.</p>
       </div>
       <div class="howto-illustration">
-        <img src="../assets/img/illustrations/how-it-works.jpg" alt="Les trois étapes de Bercea : observer bébé, l'algorithme apprend, coucher au bon moment" width="1600" height="686" loading="lazy" decoding="async">
+        <picture><source type="image/webp" srcset="../assets/img/illustrations/how-it-works-800.webp 800w, ../assets/img/illustrations/how-it-works.webp 1600w" sizes="(max-width: 812px) calc(100vw - 32px), 780px"><img src="../assets/img/illustrations/how-it-works.jpg" alt="Les trois étapes de Bercea : observer bébé, l'algorithme apprend, coucher au bon moment" width="1600" height="686" loading="lazy" decoding="async"></picture>
       </div>
       <div class="howto-steps">
         <div class="howto-step">
@@ -177,7 +203,7 @@
           </ul>
         </div>
         <div class="showcase-visual">
-          <img src="../assets/img/screens/algorithme.jpg" width="800" height="1731" alt="Écran algorithme de Bercea" loading="lazy">
+          <picture><source type="image/webp" srcset="../assets/img/screens/algorithme-520.webp 520w, ../assets/img/screens/algorithme.webp 800w" sizes="260px"><img src="../assets/img/screens/algorithme.jpg" width="800" height="1731" alt="Écran algorithme de Bercea" loading="lazy"></picture>
         </div>
       </div>
 
@@ -193,7 +219,7 @@
           </ul>
         </div>
         <div class="showcase-visual">
-          <img src="../assets/img/screens/sons.jpg" width="800" height="1731" alt="Écran des sons apaisants" loading="lazy">
+          <picture><source type="image/webp" srcset="../assets/img/screens/sons-520.webp 520w, ../assets/img/screens/sons.webp 800w" sizes="260px"><img src="../assets/img/screens/sons.jpg" width="800" height="1731" alt="Écran des sons apaisants" loading="lazy"></picture>
         </div>
       </div>
 
@@ -209,7 +235,7 @@
           </ul>
         </div>
         <div class="showcase-visual">
-          <img src="../assets/img/screens/bien-etre.jpg" width="800" height="1731" alt="Écran bien-être parental" loading="lazy">
+          <picture><source type="image/webp" srcset="../assets/img/screens/bien-etre-520.webp 520w, ../assets/img/screens/bien-etre.webp 800w" sizes="260px"><img src="../assets/img/screens/bien-etre.jpg" width="800" height="1731" alt="Écran bien-être parental" loading="lazy"></picture>
         </div>
       </div>
     </div>
@@ -267,9 +293,26 @@
           </ul>
         </div>
         <div class="showcase-visual illustration">
-          <img src="../assets/img/illustrations/coparent.jpg" alt="Deux parents suivent le sommeil de leur bébé, chacun sur son téléphone, reliés par une lune bienveillante" width="1280" height="801" loading="lazy" decoding="async">
+          <picture><source type="image/webp" srcset="../assets/img/illustrations/coparent-640.webp 640w, ../assets/img/illustrations/coparent.webp 1280w" sizes="(max-width: 572px) calc(100vw - 32px), 540px"><img src="../assets/img/illustrations/coparent.jpg" alt="Deux parents suivent le sommeil de leur bébé, chacun sur son téléphone, reliés par une lune bienveillante" width="1280" height="801" loading="lazy" decoding="async"></picture>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Guides -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Guides gratuits</span>
+        <h2>Les repères du sommeil de bébé</h2>
+        <p>Fenêtres d'éveil, heures de sommeil, régression des 4 mois : les questions que se posent tous les parents, avec ce qu'en disent vraiment les études.</p>
+      </div>
+      <div class="guide-card-grid">
+        <a href="guide/fenetres-eveil-bebe" class="guide-card"><h3>🕐 Fenêtres d'éveil : le tableau par âge</h3><p>Combien de temps votre bébé peut-il rester éveillé selon son âge ? Le tableau de référence de 0 à 24 mois, avec les signes de fatigue à reconnaître.</p></a>
+        <a href="guide/combien-dort-un-bebe" class="guide-card"><h3>😴 Combien de temps dort un bébé ?</h3><p>Sommeil total, nuits et siestes de 0 à 24 mois : le tableau de référence, et comment l'interpréter sans s'angoisser.</p></a>
+        <a href="guide/regression-sommeil-4-mois" class="guide-card"><h3>📉 Régression des 4 mois : mythe ou réalité ?</h3><p>La recherche 2024 bouscule les idées reçues : aucun pic universel de réveils. Ce qui se transforme vraiment, et comment l'accompagner.</p></a>
+      </div>
+      <p class="text-center mt-2"><a href="guide/">Tous les guides sommeil bébé →</a></p>
     </div>
   </section>
 
@@ -304,7 +347,7 @@
         <p>L'app qui aide votre bébé à mieux dormir. Basée sur la science, pensée pour les vrais parents.</p>
       </div>
       <div class="footer-col">
-        <h4>Produit</h4>
+        <p class="footer-title">Produit</p>
         <ul>
           <li><a href="fonctionnalites">Fonctionnalités</a></li>
           <li><a href="science">Science</a></li>
@@ -313,14 +356,14 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Entreprise</h4>
+        <p class="footer-title">Entreprise</p>
         <ul>
           <li><a href="contact">Contact</a></li>
           <li><a href="/privacy" target="_blank" rel="noopener">Confidentialité</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Langue</h4>
+        <p class="footer-title">Langue</p>
         <ul>
           <li><a href="../fr/">🇫🇷 Français</a></li>
           <li><a href="../en/">🇬🇧 English</a></li>
@@ -328,9 +371,9 @@
       </div>
     </div>
     <div class="footer-social">
-      <a href="https://instagram.com/bercea.app" target="_blank" rel="noopener" aria-label="Instagram Bercea">
+      <a href="https://instagram.com/bercea.app" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-        <span>Suivez-nous : @bercea.app</span>
+        <span>Suivez-nous sur Instagram : @bercea.app</span>
       </a>
     </div>
     <div class="footer-bottom">
@@ -339,6 +382,6 @@
   </div>
 </footer>
 
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js?v=20261028"></script>
 </body>
 </html>

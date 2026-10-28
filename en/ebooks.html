@@ -4,14 +4,12 @@
 <meta name="google-site-verification" content="pw3cvCqwkJUWkLKOZLaTlWeFZFNxrzgMjf4DwJ_SHzI">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>E-books | Bercea</title>
+<title>E-books on child sleep, from birth to age 6 | Bercea</title>
 <meta name="description" content="Three practical guides to support your child's sleep, from newborn to preschool. Research distilled into concrete advice.">
 <meta name="theme-color" content="#0f1329">
 <link rel="icon" href="../assets/icons/logo.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/styles.css?v=20261028">
 <link rel="canonical" href="https://bercea.app/en/ebooks">
 <meta property="og:title" content="Baby sleep e-books | Bercea">
 <meta property="og:description" content="3 practical guides on child sleep, from newborn to preschool. Based on scientific research.">
@@ -26,7 +24,7 @@
 <meta name="twitter:image" content="https://bercea.app/assets/img/illustrations/og.jpg">
 <link rel="alternate" hreflang="fr" href="https://bercea.app/fr/ebooks">
 <link rel="alternate" hreflang="en" href="https://bercea.app/en/ebooks">
-<link rel="alternate" hreflang="x-default" href="https://bercea.app/">
+<link rel="alternate" hreflang="x-default" href="https://bercea.app/en/ebooks">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Bercea","item":"https://bercea.app/en/"},{"@type":"ListItem","position":2,"name":"E-books","item":"https://bercea.app/en/ebooks"}]}
 </script>
@@ -36,7 +34,7 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="./" class="logo"><img src="../assets/icons/logo.svg" alt="Bercea"><span>Bercea</span></a>
+    <a href="./" class="logo"><img src="../assets/icons/logo.svg" alt=""><span>Bercea</span></a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
     <nav class="nav">
       <a href="./">Home</a>
@@ -55,7 +53,7 @@
 
 <main>
   <section class="hero hero--video hero--light">
-    <video class="hero-bg" autoplay muted loop playsinline preload="auto" poster="../assets/video/hero-dawn-poster.jpg" aria-hidden="true" tabindex="-1">
+    <video class="hero-bg" muted loop playsinline preload="none" poster="../assets/video/hero-dawn-poster.webp" data-autoplay aria-hidden="true" tabindex="-1">
       <source src="../assets/video/hero-dawn.webm" type="video/webm">
       <source src="../assets/video/hero-dawn.mp4" type="video/mp4">
     </video>
@@ -75,10 +73,10 @@
 
         <article class="ebook-card">
           <div class="ebook-cover">
-            <img src="../assets/covers/bebe-en.jpg" alt="Cover of Your Baby's Sleep book" loading="lazy">
+            <picture><source type="image/webp" srcset="../assets/covers/bebe-en-480.webp 480w, ../assets/covers/bebe-en-800.webp 800w" sizes="(max-width: 640px) calc(100vw - 32px), 360px"><img src="../assets/covers/bebe-en.jpg" width="1600" height="2560" alt="Cover of Your Baby's Sleep book" loading="lazy"></picture>
           </div>
           <div class="ebook-body">
-            <h3>Your Baby's Sleep (0 to 12 months)</h3>
+            <h2>Your Baby's Sleep (0 to 12 months)</h2>
             <p>Everything about wake windows, naps and nights in the newborn stage. A complete guide to navigate the first year with confidence.</p>
             <div class="ebook-stores">
               <a href="https://www.amazon.fr/dp/B0DSTHKN3N" class="store-chip" target="_blank" rel="noopener">Amazon Kindle →</a>
@@ -88,10 +86,10 @@
 
         <article class="ebook-card">
           <div class="ebook-cover">
-            <img src="../assets/covers/toddler-en.jpg" alt="Cover of Sleep After Year One book" loading="lazy">
+            <picture><source type="image/webp" srcset="../assets/covers/toddler-en-480.webp 480w, ../assets/covers/toddler-en-800.webp 800w" sizes="(max-width: 640px) calc(100vw - 32px), 360px"><img src="../assets/covers/toddler-en.jpg" width="1600" height="2560" alt="Cover of Sleep After Year One book" loading="lazy"></picture>
           </div>
           <div class="ebook-body">
-            <h3>Sleep After Year One (1 to 3 years)</h3>
+            <h2>Sleep After Year One (1 to 3 years)</h2>
             <p>Nap transitions, bedtime resistance, nightmares, moving to a big-kid bed. Concrete answers for this pivotal stage.</p>
             <div class="ebook-stores">
               <a href="https://www.amazon.fr/dp/B0DRRDJ5M5" class="store-chip" target="_blank" rel="noopener">Amazon Kindle →</a>
@@ -101,10 +99,10 @@
 
         <article class="ebook-card">
           <div class="ebook-cover">
-            <img src="../assets/covers/preschool-en.jpg" alt="Cover of When Big Kids Don't Sleep book" loading="lazy">
+            <picture><source type="image/webp" srcset="../assets/covers/preschool-en-480.webp 480w, ../assets/covers/preschool-en-800.webp 800w" sizes="(max-width: 640px) calc(100vw - 32px), 360px"><img src="../assets/covers/preschool-en.jpg" width="1600" height="2560" alt="Cover of When Big Kids Don't Sleep book" loading="lazy"></picture>
           </div>
           <div class="ebook-body">
-            <h3>When Big Kids Don't Sleep (3 to 6 years)</h3>
+            <h2>When Big Kids Don't Sleep (3 to 6 years)</h2>
             <p>Evening rituals, fear of the dark, night waking, screens, nightmares. A science-based guide to help your child become a confident sleeper before school.</p>
             <div class="ebook-stores">
               <a href="https://www.amazon.fr/dp/B0DH2NJ54W" class="store-chip" target="_blank" rel="noopener">Amazon Kindle →</a>
@@ -132,7 +130,7 @@
         <p>The app that helps your baby sleep better. Built on science, made for real parents.</p>
       </div>
       <div class="footer-col">
-        <h4>Product</h4>
+        <p class="footer-title">Product</p>
         <ul>
           <li><a href="features">Features</a></li>
           <li><a href="science">Science</a></li>
@@ -141,14 +139,14 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
+        <p class="footer-title">Company</p>
         <ul>
           <li><a href="contact">Contact</a></li>
           <li><a href="/privacy" target="_blank" rel="noopener">Privacy</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Language</h4>
+        <p class="footer-title">Language</p>
         <ul>
           <li><a href="../fr/">🇫🇷 Français</a></li>
           <li><a href="../en/">🇬🇧 English</a></li>
@@ -156,15 +154,15 @@
       </div>
     </div>
     <div class="footer-social">
-      <a href="https://instagram.com/bercea.app" target="_blank" rel="noopener" aria-label="Instagram Bercea">
+      <a href="https://instagram.com/bercea.app" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-        <span>Follow us : @bercea.app</span>
+        <span>Follow us on Instagram: @bercea.app</span>
       </a>
     </div>
     <div class="footer-bottom">© 2026 Bercea · contact@bercea.fr</div>
   </div>
 </footer>
 
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js?v=20261028"></script>
 </body>
 </html>

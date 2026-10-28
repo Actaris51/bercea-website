@@ -8,10 +8,8 @@
 <meta name="description" content="Free baby sleep tracker: next nap and bedtime, a health record, starting solids with allergens, and a sleep check-up. No account, no ads.">
 <meta name="theme-color" content="#0f1329">
 <link rel="icon" href="../assets/icons/logo.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/styles.css?v=20261028">
 <link rel="canonical" href="https://bercea.app/en/">
 <meta property="og:title" content="Bercea: free baby sleep tracker app">
 <meta property="og:description" content="The right time to put baby down, plus a health record and starting solids, in one free app. No account, no ads.">
@@ -49,13 +47,41 @@
   "privacyPolicy": "https://bercea.app/privacy"
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://bercea.app/#site",
+      "name": "Bercea",
+      "alternateName": "Bercea : Sommeil Bébé",
+      "url": "https://bercea.app/",
+      "inLanguage": ["fr", "en"],
+      "publisher": { "@id": "https://bercea.app/#editeur" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bercea.app/#editeur",
+      "name": "Bercea",
+      "url": "https://bercea.app/",
+      "logo": { "@type": "ImageObject", "url": "https://bercea.app/assets/icons/bercea-512.png", "width": 512, "height": 512 },
+      "sameAs": [
+        "https://instagram.com/bercea.app",
+        "https://apps.apple.com/fr/app/bercea-sommeil-bébé/id6762083340",
+        "https://play.google.com/store/apps/details?id=com.bercea.babysleep"
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="stars" aria-hidden="true"></div>
 
 <header class="site-header">
   <div class="container">
-    <a href="./" class="logo"><img src="../assets/icons/logo.svg" alt="Bercea"><span>Bercea</span></a>
+    <a href="./" class="logo"><img src="../assets/icons/logo.svg" alt=""><span>Bercea</span></a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
     <nav class="nav">
       <a href="./" class="active">Home</a>
@@ -74,7 +100,7 @@
 
 <main>
   <section class="hero hero--video">
-    <video class="hero-bg" autoplay muted loop playsinline preload="auto" poster="../assets/video/hero-poster.jpg" aria-hidden="true" tabindex="-1">
+    <video class="hero-bg" muted loop playsinline preload="none" poster="../assets/video/hero-poster.webp" data-autoplay aria-hidden="true" tabindex="-1">
       <source src="../assets/video/hero-loop.webm" type="video/webm">
       <source src="../assets/video/hero-loop.mp4" type="video/mp4">
     </video>
@@ -87,10 +113,10 @@
         <div class="hero-ctas">
           <div class="store-badges">
             <a href="https://apps.apple.com/fr/app/bercea-sommeil-bébé/id6762083340" target="_blank" rel="noopener" class="store-badge-img" aria-label="Download on the App Store">
-              <img src="../assets/badges/appstore-en.svg" alt="Download on the App Store" height="48" style="height:48px;width:auto;display:block;">
+              <img src="../assets/badges/appstore-en.svg" alt="Download on the App Store" width="144" height="48" style="height:48px;width:auto;display:block;">
             </a>
             <a href="https://play.google.com/store/apps/details?id=com.bercea.babysleep" target="_blank" rel="noopener" class="store-badge-img" aria-label="Get it on Google Play">
-              <img src="../assets/badges/googleplay-en.png" alt="Get it on Google Play" height="48" style="height:48px;width:auto;display:block;">
+              <img src="../assets/badges/googleplay-en.png" alt="Get it on Google Play" width="124" height="48" style="height:48px;width:auto;display:block;">
             </a>
           </div>
           <a href="features" class="btn btn-ghost">See features</a>
@@ -134,7 +160,7 @@
         <p>No complicated settings. You log, Bercea learns, and you lay baby down at the right moment.</p>
       </div>
       <div class="howto-illustration">
-        <img src="../assets/img/illustrations/how-it-works.jpg" alt="The three steps of Bercea: observe baby, the algorithm learns, lay down at the right time" width="1600" height="686" loading="lazy" decoding="async">
+        <picture><source type="image/webp" srcset="../assets/img/illustrations/how-it-works-800.webp 800w, ../assets/img/illustrations/how-it-works.webp 1600w" sizes="(max-width: 812px) calc(100vw - 32px), 780px"><img src="../assets/img/illustrations/how-it-works.jpg" alt="The three steps of Bercea: observe baby, the algorithm learns, lay down at the right time" width="1600" height="686" loading="lazy" decoding="async"></picture>
       </div>
       <div class="howto-steps">
         <div class="howto-step">
@@ -170,7 +196,7 @@
           </ul>
         </div>
         <div class="showcase-visual">
-          <img src="../assets/img/screens/algorithme.jpg" width="800" height="1731" alt="Bercea algorithm screen" loading="lazy">
+          <picture><source type="image/webp" srcset="../assets/img/screens/algorithme-520.webp 520w, ../assets/img/screens/algorithme.webp 800w" sizes="260px"><img src="../assets/img/screens/algorithme.jpg" width="800" height="1731" alt="Bercea algorithm screen" loading="lazy"></picture>
         </div>
       </div>
 
@@ -186,7 +212,7 @@
           </ul>
         </div>
         <div class="showcase-visual">
-          <img src="../assets/img/screens/sons.jpg" width="800" height="1731" alt="Soothing sounds screen" loading="lazy">
+          <picture><source type="image/webp" srcset="../assets/img/screens/sons-520.webp 520w, ../assets/img/screens/sons.webp 800w" sizes="260px"><img src="../assets/img/screens/sons.jpg" width="800" height="1731" alt="Soothing sounds screen" loading="lazy"></picture>
         </div>
       </div>
 
@@ -202,7 +228,7 @@
           </ul>
         </div>
         <div class="showcase-visual">
-          <img src="../assets/img/screens/bien-etre.jpg" width="800" height="1731" alt="Parental well-being screen" loading="lazy">
+          <picture><source type="image/webp" srcset="../assets/img/screens/bien-etre-520.webp 520w, ../assets/img/screens/bien-etre.webp 800w" sizes="260px"><img src="../assets/img/screens/bien-etre.jpg" width="800" height="1731" alt="Parental well-being screen" loading="lazy"></picture>
         </div>
       </div>
     </div>
@@ -259,9 +285,26 @@
           </ul>
         </div>
         <div class="showcase-visual illustration">
-          <img src="../assets/img/illustrations/coparent.jpg" alt="Two parents tracking their baby's sleep, each on their own phone, connected by a gentle moon" width="1280" height="801" loading="lazy" decoding="async">
+          <picture><source type="image/webp" srcset="../assets/img/illustrations/coparent-640.webp 640w, ../assets/img/illustrations/coparent.webp 1280w" sizes="(max-width: 572px) calc(100vw - 32px), 540px"><img src="../assets/img/illustrations/coparent.jpg" alt="Two parents tracking their baby's sleep, each on their own phone, connected by a gentle moon" width="1280" height="801" loading="lazy" decoding="async"></picture>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Guides -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Free guides</span>
+        <h2>Baby sleep, the essentials</h2>
+        <p>Wake windows, hours of sleep, the 4-month regression: the questions every parent asks, with what the studies actually say.</p>
+      </div>
+      <div class="guide-card-grid">
+        <a href="guide/wake-windows-by-age" class="guide-card"><h3>🕐 Wake windows: the chart by age</h3><p>How long can your baby comfortably stay awake at each age? The reference chart from 0 to 24 months, with the tiredness cues to watch for.</p></a>
+        <a href="guide/how-much-do-babies-sleep" class="guide-card"><h3>😴 How much do babies sleep? The chart by age</h3><p>Total sleep, nights and naps from 0 to 24 months, based on WHO recommendations, and how to read the ranges.</p></a>
+        <a href="guide/4-month-sleep-regression" class="guide-card"><h3>📉 The 4-month sleep regression: myth or reality?</h3><p>2024 research challenges the received wisdom: no universal spike in night wakings. What actually changes, and how to support it.</p></a>
+      </div>
+      <p class="text-center mt-2"><a href="guide/">All baby sleep guides →</a></p>
     </div>
   </section>
 
@@ -294,7 +337,7 @@
         <p>The app that helps your baby sleep better. Built on science, made for real parents.</p>
       </div>
       <div class="footer-col">
-        <h4>Product</h4>
+        <p class="footer-title">Product</p>
         <ul>
           <li><a href="features">Features</a></li>
           <li><a href="science">Science</a></li>
@@ -303,14 +346,14 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
+        <p class="footer-title">Company</p>
         <ul>
           <li><a href="contact">Contact</a></li>
           <li><a href="/privacy" target="_blank" rel="noopener">Privacy</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Language</h4>
+        <p class="footer-title">Language</p>
         <ul>
           <li><a href="../fr/">🇫🇷 Français</a></li>
           <li><a href="../en/">🇬🇧 English</a></li>
@@ -318,15 +361,15 @@
       </div>
     </div>
     <div class="footer-social">
-      <a href="https://instagram.com/bercea.app" target="_blank" rel="noopener" aria-label="Instagram Bercea">
+      <a href="https://instagram.com/bercea.app" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-        <span>Follow us : @bercea.app</span>
+        <span>Follow us on Instagram: @bercea.app</span>
       </a>
     </div>
     <div class="footer-bottom">© 2026 Bercea · contact@bercea.fr</div>
   </div>
 </footer>
 
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js?v=20261028"></script>
 </body>
 </html>

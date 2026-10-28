@@ -5,13 +5,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fonctionnalités : sommeil, carnet de santé, diversification | Bercea</title>
-<meta name="description" content="Prochaine sieste et coucher, suivi du sommeil, carnet de santé et rapport pour le pédiatre, diversification avec plus de 100 aliments, bilan sommeil, mode nuit. Gratuit.">
+<meta name="description" content="Prochaine sieste et coucher, suivi du sommeil, carnet de santé et rapport pour le pédiatre, diversification (plus de 100 aliments), bilan sommeil. Gratuit.">
 <meta name="theme-color" content="#0f1329">
 <link rel="icon" href="../assets/icons/logo.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/styles.css?v=20261028">
 <link rel="canonical" href="https://bercea.app/fr/fonctionnalites">
 <meta property="og:title" content="Fonctionnalités : sommeil, carnet de santé, diversification | Bercea">
 <meta property="og:description" content="Prochaine sieste et coucher, carnet de santé, diversification, bilan sommeil et mode nuit : les fonctionnalités de Bercea.">
@@ -26,7 +24,7 @@
 <meta name="twitter:image" content="https://bercea.app/assets/img/illustrations/og.jpg">
 <link rel="alternate" hreflang="fr" href="https://bercea.app/fr/fonctionnalites">
 <link rel="alternate" hreflang="en" href="https://bercea.app/en/features">
-<link rel="alternate" hreflang="x-default" href="https://bercea.app/">
+<link rel="alternate" hreflang="x-default" href="https://bercea.app/en/features">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Bercea","item":"https://bercea.app/fr/"},{"@type":"ListItem","position":2,"name":"Fonctionnalités","item":"https://bercea.app/fr/fonctionnalites"}]}
 </script>
@@ -36,7 +34,7 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="./" class="logo"><img src="../assets/icons/logo.svg" alt="Bercea"><span>Bercea</span></a>
+    <a href="./" class="logo"><img src="../assets/icons/logo.svg" alt=""><span>Bercea</span></a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
     <nav class="nav">
       <a href="./">Accueil</a>
@@ -55,7 +53,7 @@
 
 <main>
   <section class="hero hero--video">
-    <video class="hero-bg" autoplay muted loop playsinline preload="auto" poster="../assets/video/hero-window-poster.jpg" aria-hidden="true" tabindex="-1">
+    <video class="hero-bg" muted loop playsinline preload="none" poster="../assets/video/hero-window-poster.webp" data-autoplay aria-hidden="true" tabindex="-1">
       <source src="../assets/video/hero-window.webm" type="video/webm">
       <source src="../assets/video/hero-window.mp4" type="video/mp4">
     </video>
@@ -84,7 +82,7 @@
           </ul>
         </div>
         <div class="showcase-visual">
-          <img src="../assets/img/screens/chrono.jpg" width="800" height="1731" alt="Écran chrono de sommeil" loading="lazy">
+          <picture><source type="image/webp" srcset="../assets/img/screens/chrono-520.webp 520w, ../assets/img/screens/chrono.webp 800w" sizes="260px"><img src="../assets/img/screens/chrono.jpg" width="800" height="1731" alt="Écran chrono de sommeil" loading="lazy"></picture>
         </div>
       </div>
 
@@ -92,7 +90,7 @@
         <div class="showcase-text">
           <span class="eyebrow">02 · Algorithme personnel</span>
           <h2>Un modèle qui apprend <em>votre</em> bébé</h2>
-          <p>Les premières prédictions s'appuient sur les moyennes scientifiques par âge (OMS, AASM). Puis, sieste après sieste, l'app affine progressivement les fenêtres d'éveil au rythme réel de votre enfant, jusqu'à 70 % de données personnelles après un mois de suivi.</p>
+          <p>Les premières prédictions s'appuient sur les moyennes scientifiques par âge (OMS, AASM). Puis, sieste après sieste, l'app affine progressivement les <a href="guide/fenetres-eveil-bebe">fenêtres d'éveil</a> au rythme réel de votre enfant, jusqu'à 70 % de données personnelles après un mois de suivi.</p>
           <ul>
             <li>Combine données scientifiques et observations personnelles</li>
             <li>Suit les changements de rythme de votre bébé</li>
@@ -102,7 +100,7 @@
           </ul>
         </div>
         <div class="showcase-visual">
-          <img src="../assets/img/screens/algorithme.jpg" width="800" height="1731" alt="Écran algorithme" loading="lazy">
+          <picture><source type="image/webp" srcset="../assets/img/screens/algorithme-520.webp 520w, ../assets/img/screens/algorithme.webp 800w" sizes="260px"><img src="../assets/img/screens/algorithme.jpg" width="800" height="1731" alt="Écran algorithme" loading="lazy"></picture>
         </div>
       </div>
 
@@ -110,7 +108,7 @@
         <div class="showcase-text">
           <span class="eyebrow">03 · Sons apaisants</span>
           <h2>10 sons pour endormir en quelques minutes</h2>
-          <p>Du bruit blanc au chant des baleines, chaque son a été choisi pour son effet apaisant documenté. Lecture en arrière-plan et protection auditive incluses.</p>
+          <p>Du <a href="guide/bruit-blanc-bebe">bruit blanc</a> au chant des baleines, chaque son a été choisi pour son effet apaisant documenté. Lecture en arrière-plan et protection auditive incluses.</p>
           <ul>
             <li>Bruit blanc, rose, utérin, pluie, océan…</li>
             <li>Lecture en arrière-plan</li>
@@ -119,7 +117,7 @@
           </ul>
         </div>
         <div class="showcase-visual">
-          <img src="../assets/img/screens/sons.jpg" width="800" height="1731" alt="Écran des sons apaisants" loading="lazy">
+          <picture><source type="image/webp" srcset="../assets/img/screens/sons-520.webp 520w, ../assets/img/screens/sons.webp 800w" sizes="260px"><img src="../assets/img/screens/sons.jpg" width="800" height="1731" alt="Écran des sons apaisants" loading="lazy"></picture>
         </div>
       </div>
 
@@ -135,7 +133,7 @@
           </ul>
         </div>
         <div class="showcase-visual">
-          <img src="../assets/img/screens/bien-etre.jpg" width="800" height="1731" alt="Écran bien-être parental" loading="lazy">
+          <picture><source type="image/webp" srcset="../assets/img/screens/bien-etre-520.webp 520w, ../assets/img/screens/bien-etre.webp 800w" sizes="260px"><img src="../assets/img/screens/bien-etre.jpg" width="800" height="1731" alt="Écran bien-être parental" loading="lazy"></picture>
         </div>
       </div>
 
@@ -151,7 +149,7 @@
           </ul>
         </div>
         <div class="showcase-visual">
-          <img src="../assets/img/screens/science.jpg" width="800" height="1731" alt="Écran science" loading="lazy">
+          <picture><source type="image/webp" srcset="../assets/img/screens/science-520.webp 520w, ../assets/img/screens/science.webp 800w" sizes="260px"><img src="../assets/img/screens/science.jpg" width="800" height="1731" alt="Écran science" loading="lazy"></picture>
         </div>
       </div>
 
@@ -168,7 +166,7 @@
           </ul>
         </div>
         <div class="showcase-visual">
-          <img src="../assets/img/screens/historique.jpg" width="800" height="1731" alt="Écran historique" loading="lazy">
+          <picture><source type="image/webp" srcset="../assets/img/screens/historique-520.webp 520w, ../assets/img/screens/historique.webp 800w" sizes="260px"><img src="../assets/img/screens/historique.jpg" width="800" height="1731" alt="Écran historique" loading="lazy"></picture>
         </div>
       </div>
 
@@ -176,7 +174,7 @@
         <div class="showcase-text">
           <span class="eyebrow">07 · Routine du coucher</span>
           <h2>Une routine, <em>chaque</em> soir</h2>
-          <p>La routine du coucher fait partie des pratiques les mieux étudiées. Dans un essai randomisé sur 405 enfants de 7 à 36 mois (Mindell, 2009), deux semaines de routine ont suffi : endormissement plus rapide, réveils moins nombreux et plus courts. Et plus elle revient de soirs par semaine, meilleurs sont les résultats (Mindell, 2015, 10 085 enfants).</p>
+          <p><a href="guide/routine-coucher-bebe">La routine du coucher</a> fait partie des pratiques les mieux étudiées. Dans un essai randomisé sur 405 enfants de 7 à 36 mois (Mindell, 2009), deux semaines de routine ont suffi : endormissement plus rapide, réveils moins nombreux et plus courts. Et plus elle revient de soirs par semaine, meilleurs sont les résultats (Mindell, 2015, 10 085 enfants).</p>
           <ul>
             <li>Check-list personnalisable : bain, massage, histoire…</li>
             <li>Barre de constance sur 7 jours</li>
@@ -185,7 +183,7 @@
           </ul>
         </div>
         <div class="showcase-visual">
-          <img src="../assets/img/screens/routine.jpg" width="800" height="1731" alt="Écran routine du coucher" loading="lazy">
+          <picture><source type="image/webp" srcset="../assets/img/screens/routine-520.webp 520w, ../assets/img/screens/routine.webp 800w" sizes="260px"><img src="../assets/img/screens/routine.jpg" width="800" height="1731" alt="Écran routine du coucher" loading="lazy"></picture>
         </div>
       </div>
 
@@ -241,7 +239,7 @@
         <p>L'app qui aide votre bébé à mieux dormir. Basée sur la science, pensée pour les vrais parents.</p>
       </div>
       <div class="footer-col">
-        <h4>Produit</h4>
+        <p class="footer-title">Produit</p>
         <ul>
           <li><a href="fonctionnalites">Fonctionnalités</a></li>
           <li><a href="science">Science</a></li>
@@ -250,14 +248,14 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Entreprise</h4>
+        <p class="footer-title">Entreprise</p>
         <ul>
           <li><a href="contact">Contact</a></li>
           <li><a href="/privacy" target="_blank" rel="noopener">Confidentialité</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Langue</h4>
+        <p class="footer-title">Langue</p>
         <ul>
           <li><a href="../fr/">🇫🇷 Français</a></li>
           <li><a href="../en/">🇬🇧 English</a></li>
@@ -265,15 +263,15 @@
       </div>
     </div>
     <div class="footer-social">
-      <a href="https://instagram.com/bercea.app" target="_blank" rel="noopener" aria-label="Instagram Bercea">
+      <a href="https://instagram.com/bercea.app" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-        <span>Suivez-nous : @bercea.app</span>
+        <span>Suivez-nous sur Instagram : @bercea.app</span>
       </a>
     </div>
     <div class="footer-bottom">© 2026 Bercea · contact@bercea.fr</div>
   </div>
 </footer>
 
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js?v=20261028"></script>
 </body>
 </html>

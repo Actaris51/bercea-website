@@ -30,6 +30,28 @@
   document.querySelectorAll('.feature-card, .ebook-card, .showcase, .stat, .science-block').forEach((el) => io.observe(el));
 })();
 
+// Background video: wide screens only, and not when the visitor asked for
+// reduced motion. CSS hides it on phones, but with the autoplay attribute it
+// was downloaded there anyway.
+(function () {
+  const videos = document.querySelectorAll('video[data-autoplay]');
+  if (!videos.length || !window.matchMedia) return;
+  const wide = window.matchMedia('(min-width: 821px)');
+  const calm = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const update = () => {
+    videos.forEach((v) => {
+      if (wide.matches && !calm.matches) {
+        const p = v.play();
+        if (p && p.catch) p.catch(() => {});
+      } else {
+        v.pause();
+      }
+    });
+  };
+  update();
+  if (wide.addEventListener) wide.addEventListener('change', update);
+})();
+
 // Simple contact form handler (mailto fallback)
 (function () {
   const form = document.querySelector('form[data-contact]');

@@ -4,14 +4,12 @@
 <meta name="google-site-verification" content="pw3cvCqwkJUWkLKOZLaTlWeFZFNxrzgMjf4DwJ_SHzI">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>E-books | Bercea</title>
+<title>E-books sur le sommeil de l'enfant, de 0 à 6 ans | Bercea</title>
 <meta name="description" content="Trois guides pratiques pour accompagner le sommeil de votre enfant, de la naissance à la maternelle. Synthèse de la recherche et conseils concrets.">
 <meta name="theme-color" content="#0f1329">
 <link rel="icon" href="../assets/icons/logo.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/styles.css?v=20261028">
 <link rel="canonical" href="https://bercea.app/fr/ebooks">
 <meta property="og:title" content="E-books sommeil bébé | Bercea">
 <meta property="og:description" content="3 guides pratiques sur le sommeil de l'enfant, du nouveau-né à la maternelle. Basés sur la recherche scientifique.">
@@ -26,7 +24,7 @@
 <meta name="twitter:image" content="https://bercea.app/assets/img/illustrations/og.jpg">
 <link rel="alternate" hreflang="fr" href="https://bercea.app/fr/ebooks">
 <link rel="alternate" hreflang="en" href="https://bercea.app/en/ebooks">
-<link rel="alternate" hreflang="x-default" href="https://bercea.app/">
+<link rel="alternate" hreflang="x-default" href="https://bercea.app/en/ebooks">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Bercea","item":"https://bercea.app/fr/"},{"@type":"ListItem","position":2,"name":"E-books","item":"https://bercea.app/fr/ebooks"}]}
 </script>
@@ -36,7 +34,7 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="./" class="logo"><img src="../assets/icons/logo.svg" alt="Bercea"><span>Bercea</span></a>
+    <a href="./" class="logo"><img src="../assets/icons/logo.svg" alt=""><span>Bercea</span></a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
     <nav class="nav">
       <a href="./">Accueil</a>
@@ -55,7 +53,7 @@
 
 <main>
   <section class="hero hero--video hero--light">
-    <video class="hero-bg" autoplay muted loop playsinline preload="auto" poster="../assets/video/hero-dawn-poster.jpg" aria-hidden="true" tabindex="-1">
+    <video class="hero-bg" muted loop playsinline preload="none" poster="../assets/video/hero-dawn-poster.webp" data-autoplay aria-hidden="true" tabindex="-1">
       <source src="../assets/video/hero-dawn.webm" type="video/webm">
       <source src="../assets/video/hero-dawn.mp4" type="video/mp4">
     </video>
@@ -75,10 +73,10 @@
 
         <article class="ebook-card">
           <div class="ebook-cover">
-            <img src="../assets/covers/bebe-fr.jpg" alt="Couverture du livre Le Sommeil de Votre Bébé" loading="lazy">
+            <picture><source type="image/webp" srcset="../assets/covers/bebe-fr-480.webp 480w, ../assets/covers/bebe-fr-800.webp 800w" sizes="(max-width: 640px) calc(100vw - 32px), 360px"><img src="../assets/covers/bebe-fr.jpg" width="1600" height="2560" alt="Couverture du livre Le Sommeil de Votre Bébé" loading="lazy"></picture>
           </div>
           <div class="ebook-body">
-            <h3>Le Sommeil de Votre Bébé (0 à 12 mois)</h3>
+            <h2>Le Sommeil de Votre Bébé (0 à 12 mois)</h2>
             <p>Tout comprendre des fenêtres d'éveil, des siestes et des nuits du nouveau-né. Un guide complet pour traverser la première année sereinement.</p>
             <div class="ebook-stores">
               <a href="https://www.amazon.fr/Sommeil-Votre-B%C3%A9b%C3%A9-apprennent-Scientifiques-ebook/dp/B0DSQYKC1F" class="store-chip" target="_blank" rel="noopener">Amazon Kindle →</a>
@@ -88,10 +86,10 @@
 
         <article class="ebook-card">
           <div class="ebook-cover">
-            <img src="../assets/covers/toddler-fr.jpg" alt="Couverture du livre Le Sommeil Après un An" loading="lazy">
+            <picture><source type="image/webp" srcset="../assets/covers/toddler-fr-480.webp 480w, ../assets/covers/toddler-fr-800.webp 800w" sizes="(max-width: 640px) calc(100vw - 32px), 360px"><img src="../assets/covers/toddler-fr.jpg" width="1600" height="2560" alt="Couverture du livre Le Sommeil Après un An" loading="lazy"></picture>
           </div>
           <div class="ebook-body">
-            <h3>Le Sommeil Après un An (1 à 3 ans)</h3>
+            <h2>Le Sommeil Après un An (1 à 3 ans)</h2>
             <p>Transitions de siestes, opposition au coucher, cauchemars, passage au lit de grand. Les réponses concrètes aux défis de cette période charnière.</p>
             <div class="ebook-stores">
               <a href="https://www.amazon.fr/Sommeil-Apr%C3%A8s-nocturnes-scientifique-Scientifiques-ebook/dp/B0DQXYZS8Q" class="store-chip" target="_blank" rel="noopener">Amazon Kindle →</a>
@@ -101,10 +99,10 @@
 
         <article class="ebook-card">
           <div class="ebook-cover">
-            <img src="../assets/covers/preschool-fr.jpg" alt="Couverture du livre Le Sommeil des Grands" loading="lazy">
+            <picture><source type="image/webp" srcset="../assets/covers/preschool-fr-480.webp 480w, ../assets/covers/preschool-fr-800.webp 800w" sizes="(max-width: 640px) calc(100vw - 32px), 360px"><img src="../assets/covers/preschool-fr.jpg" width="1600" height="2560" alt="Couverture du livre Le Sommeil des Grands" loading="lazy"></picture>
           </div>
           <div class="ebook-body">
-            <h3>Le Sommeil des Grands (3 à 6 ans)</h3>
+            <h2>Le Sommeil des Grands (3 à 6 ans)</h2>
             <p>Rituels du soir, peur du noir, réveils nocturnes, écrans, cauchemars. Un guide pour accompagner votre enfant dans l'autonomie du sommeil avant la grande école.</p>
             <div class="ebook-stores">
               <a href="https://www.amazon.fr/Sommeil-Grands-cauchemars-scientifique-Scientifiques-ebook/dp/B0FNKSXCB8" class="store-chip" target="_blank" rel="noopener">Amazon Kindle →</a>
@@ -132,7 +130,7 @@
         <p>L'app qui aide votre bébé à mieux dormir. Basée sur la science, pensée pour les vrais parents.</p>
       </div>
       <div class="footer-col">
-        <h4>Produit</h4>
+        <p class="footer-title">Produit</p>
         <ul>
           <li><a href="fonctionnalites">Fonctionnalités</a></li>
           <li><a href="science">Science</a></li>
@@ -141,14 +139,14 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Entreprise</h4>
+        <p class="footer-title">Entreprise</p>
         <ul>
           <li><a href="contact">Contact</a></li>
           <li><a href="/privacy" target="_blank" rel="noopener">Confidentialité</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Langue</h4>
+        <p class="footer-title">Langue</p>
         <ul>
           <li><a href="../fr/">🇫🇷 Français</a></li>
           <li><a href="../en/">🇬🇧 English</a></li>
@@ -156,15 +154,15 @@
       </div>
     </div>
     <div class="footer-social">
-      <a href="https://instagram.com/bercea.app" target="_blank" rel="noopener" aria-label="Instagram Bercea">
+      <a href="https://instagram.com/bercea.app" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-        <span>Suivez-nous : @bercea.app</span>
+        <span>Suivez-nous sur Instagram : @bercea.app</span>
       </a>
     </div>
     <div class="footer-bottom">© 2026 Bercea · contact@bercea.fr</div>
   </div>
 </footer>
 
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js?v=20261028"></script>
 </body>
 </html>
